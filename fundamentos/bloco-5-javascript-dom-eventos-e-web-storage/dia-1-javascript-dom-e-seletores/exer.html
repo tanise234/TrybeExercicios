@@ -52,15 +52,21 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 - document.getElementsByTagName()
 Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
 */
-  function tagP() {
-    document.getElementsByTagName("p")[1]innerText = 'Daqui a dois anos eu quero estar formada pela Trybe, trabalhando em um empresa que combine muito comigo e com um salário que me permita viver bem e realizar meus sonhos.';
-    }
-  tagP();
+function tagP() {
+  document.getElementsByTagName("p")[1]innerText = 'Daqui a dois anos eu quero estar formada pela Trybe, trabalhando em um empresa que combine muito comigo e com um salário que me permita viver bem e realizar meus sonhos.';
+  }
+tagP();
 /*
 Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).*/
-function name(params) {
-  
+function mudarCor() {
+  document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
 }
+mudarCor();
+
+function print() {
+  console.log('voila');
+}
+print();
   /*
   Crie uma função que mude a cor do quadrado vermelho para branco.
     Crie uma função que corrija o texto da tag <h1>.
