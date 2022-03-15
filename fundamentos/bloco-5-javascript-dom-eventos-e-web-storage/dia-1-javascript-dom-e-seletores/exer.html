@@ -64,10 +64,6 @@
     }
     mudarCorAmareloVerde();
 
-    function print() {
-      console.log('voila');
-    }
-    print();
     /*
     Crie uma função que mude a cor do quadrado vermelho para branco.
     */
@@ -78,20 +74,33 @@
 
     /*
     Crie uma função que corrija o texto da tag <h1>.
-*/
+    */
+    function corrigeTitulo() {
+      document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript ';
+    }
+    corrigeTitulo();
 
+    /*
+    Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    */
+    function maiusculo() {
+      let textTagP = document.getElementsByTagName('p');
+      for (let i = 0; i < textTagP.length; i += 1) {
+        textTagP[i].innerText = textTagP[i].innerText.toUpperCase();
+      }
+    }
+    maiusculo();
 
-
-/*
-      Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-*/
-
-
-
-/*
-        Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-             */
-
+    /*
+    Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    */
+    function exibirTagsP() {
+      let textTagP = document.getElementsByTagName('p');
+      for (let i = 0; i < textTagP.length; i += 1) {
+        console.log(textTagP[i].innerText);
+      }
+    }
+    exibirTagsP();
 
   </script>
 </body>
