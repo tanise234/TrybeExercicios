@@ -57,7 +57,52 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+    // 1
+        let texto = document.createElement('h1');
+        texto.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.getElementsByTagName('body')[0].appendChild(texto);
+
+    //2
+        let principal = document.createElement('main');
+        principal.className ='main-content';
+        document.querySelector('body').appendChild(principal);
+
+    //3
+        let secao = document.createElement('section');
+        secao.classList = 'center-content';
+        principal.appendChild(secao);
+
+    //4
+        let paragrafo = document.createElement('p');
+        paragrafo.innerText = 'Working with elements from DOM using JavaScript';
+        secao.appendChild(paragrafo);
+
+    //5
+        let secao2 = document.createElement('section');
+        secao2.className = 'left-content';
+        principal.appendChild(secao2);
+
+    //6
+        let secao3 = document.createElement('section');
+        secao3.className = 'right-content';
+        principal.appendChild(secao3);
+
+    //7
+        let imagem = document.createElement('img');
+        imagem.className = 'small-image';
+        imagem.src = 'https://picsum.photos/200';
+        secao2.appendChild(imagem);
+
+    //8
+        let lista = document.createElement('ul');
+        // function listItem(i,number) {
+        //     lista[i].innerHtml = '<li>number</li>';
+        // }
+        lista.innerHTML = '<li>um</li>';
+        lista.innerHTML = '<li>dois</li>';
+        secao3.appendChild(lista);
+
+        
     </script>
   </body>
 </html>
