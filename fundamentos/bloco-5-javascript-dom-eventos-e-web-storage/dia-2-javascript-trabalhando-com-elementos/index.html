@@ -95,11 +95,13 @@
 
     //8
         let lista = document.createElement('ul');
-        // function listItem(i,number) {
-        //     lista[i].innerHtml = '<li>number</li>';
-        // }
-        lista.innerHTML = '<li>um</li>';
-        lista.innerHTML = '<li>dois</li>';
+        let itensDaLista = ['um', 'dois', 'três', 'quatro'];
+        function listItem(number) {
+            for (let i = 0; i < itensDaLista.length; i++) {
+                lista.innerHtml = '<li>itensDaLista[i]</li>';
+            }
+            lista[i].innerHtml = '<li>number</li>';
+        }
         secao3.appendChild(lista);
 
         
