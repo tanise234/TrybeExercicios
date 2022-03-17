@@ -67,3 +67,12 @@ function destacarFeriados() {
     let botao = document.getElementById('btn-holiday');
     botao.addEventListener('click', console.log('ah funionou!'));
 } // verificar
+
+// Exercício 4
+function botaoSextas(SextaFeira) {
+    let botao = document.createElement('button');
+    botao.id = 'btn-friday';
+    botao.innerText = 'Sexta-feira';
+    document.querySelector('.buttons-container').appendChild(botao);
+}
+botaoSextas(); //verificar o parâmetro
