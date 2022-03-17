@@ -60,4 +60,10 @@ function botaoFeriados(Feriados) {
     document.querySelector('.buttons-container').appendChild(botao);
 }
 
-botaoFeriados('Feriados');
+botaoFeriados(); //verificar o parâmetro
+
+// Exercício 3
+function destacarFeriados() {
+    let botao = document.getElementById('btn-holiday');
+    botao.addEventListener('click', console.log('ah funionou!'));
+} // verificar
