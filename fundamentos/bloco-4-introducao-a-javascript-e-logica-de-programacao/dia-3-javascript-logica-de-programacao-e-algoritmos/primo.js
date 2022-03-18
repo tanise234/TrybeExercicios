@@ -1,18 +1,19 @@
-let limit = 4;
+let limit = 50;
 
-// verificar os valores começando dos maiores
+// verificar os valores começando pelos maiores
 for (let index = limit; index > 0; index -= 1) {
-    
-    // verificar os módulos
-    for (let divider = 2; divider < index / 2; divider += 1) {
-        if (index % divider === 0){
+    let primo = true;
+
+    // verificar se existem divisores começando pelo 2 e indo até a metade do número
+    for (let divider = 2; divider <= index / 2; divider += 1) {
+        if (index % divider === 0) {
+            primo = false;
             break;
         }
-        else {
-console.log('para1');
-        }
-        console.log('para2');
     }
-    console.log('para3');
+
+    if (primo === true) {
+        console.log(index + " é o maior primo!");
+        break;
+    }
 }
-console.log('para4');
