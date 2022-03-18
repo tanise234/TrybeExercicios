@@ -35,10 +35,22 @@
 
 // exer 4 - árvore de natal
 let n = 5;
+let par = true;
 for (let i = 0; i < n; i += 1) {
+    if (par === true) {
+        preenche(i);
+    }
+    par = !par;
+}
+
+function preenche(index) {
     let display = '';
     for (let j = 0; j < n; j += 1) {
-        display = display + '*';
+        if (j < (n-index-1)/2 || j > n-(n-index)/2){
+        display = display + ' ';
+        } else {
+            display = display + '*';
+        }
     }
     console.log(display);
 }
