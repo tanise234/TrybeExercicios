@@ -56,8 +56,25 @@ inserirDias(dezDaysList);
 function botaoFeriados(Feriados) {
     let botao = document.createElement('button');
     botao.id = 'btn-holiday';
-    botao.innerText = 'Feriados';
+    botao.innerText = Feriados;
     document.querySelector('.buttons-container').appendChild(botao);
 }
 
 botaoFeriados('Feriados');
+
+// Exercício 3
+function destacarFeriados() {
+    let botao = document.getElementById('btn-holiday');
+    botao.addEventListener('click', console.log('ah funionou!'));
+}
+destacarFeriados;
+// verificar
+
+// Exercício 4
+function botaoSextas(SextaFeira) {
+    let botao = document.createElement('button');
+    botao.id = 'btn-friday';
+    botao.innerText = SextaFeira;
+    document.querySelector('.buttons-container').appendChild(botao);
+}
+botaoSextas('Sexta-feira');
