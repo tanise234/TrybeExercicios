@@ -55,55 +55,49 @@
 //     console.log(display);
 // }
 
-// exer 5 - contorno da árvore de natal
-let n = 7;
-let par = true;
-for (let i = 0; i < n - 1; i += 1) {
-    if (par === true) {
-        contorno(i);
-    }
-    par = !par;
-}
-preencheUltimaLinha(n);
+// // exer 5 - contorno da árvore de natal
+// let n = 7;
+// let par = true;
+// for (let i = 0; i < n - 1; i += 1) {
+//     if (par === true) {
+//         contorno(i);
+//     }
+//     par = !par;
+// }
+// preencheUltimaLinha(n);
 
-function contorno(index) {
-    let display = '';
-    for (let j = 0; j < n; j += 1) {
-        let metade = (n - index - 1) / 2;
-        if (j == metade || j == n - 1 - metade) {
-            display = display + '*';
-        } else {
-            display = display + ' ';
-        }
-    }
-    console.log(display);
-}
-
-function preencheUltimaLinha (n) {
-    let display = '';
-    for (let j = 0; j < n; j += 1) {
-        display = display + '*';
-    }
-    console.log(display);
-}
-
-// // exer 6 - verificar se é primo
-// let limit = 50;
-
-// // verificar os valores começando pelos maiores
-// for (let index = limit; index > 0; index -= 1) {
-//     let primo = true;
-
-//     // verificar se existem divisores começando pelo 2 e indo até a metade do número
-//     for (let divider = 2; divider <= index / 2; divider += 1) {
-//         if (index % divider === 0) {
-//             primo = false;
-//             break;
+// function contorno(index) {
+//     let display = '';
+//     for (let j = 0; j < n; j += 1) {
+//         let metade = (n - index - 1) / 2;
+//         if (j == metade || j == n - 1 - metade) {
+//             display = display + '*';
+//         } else {
+//             display = display + ' ';
 //         }
 //     }
-
-//     if (primo === true) {
-//         console.log(index + " é o maior primo!");
-//         break;
-//     }
+//     console.log(display);
 // }
+
+// function preencheUltimaLinha (n) {
+//     let display = '';
+//     for (let j = 0; j < n; j += 1) {
+//         display = display + '*';
+//     }
+//     console.log(display);
+// }
+
+// exer 6 - verificar se é primo
+let divisores = 0;
+let n = 17;
+
+for (let i = 2; i < n; i += 1) {
+    if (n % i === 0) {
+        divisores += 1;
+    }
+}
+if (divisores === 0) {
+    console.log(n + " é primo!");
+} else {
+    console.log(n + ' não é primo!');
+}
