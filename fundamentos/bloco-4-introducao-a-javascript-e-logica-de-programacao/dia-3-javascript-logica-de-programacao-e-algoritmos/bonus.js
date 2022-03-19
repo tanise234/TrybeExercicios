@@ -33,30 +33,59 @@
 //     console.log(display);
 // }
 
-// exer 4 - árvore de natal
-let n = 5;
+// // exer 4 - árvore de natal
+// let n = 5;
+// let par = true;
+// for (let i = 0; i < n; i += 1) {
+//     if (par === true) {
+//         preenche(i);
+//     }
+//     par = !par;
+// }
+
+// function preenche(index) {
+//     let display = '';
+//     for (let j = 0; j < n; j += 1) {
+//         if (j < (n-index-1)/2 || j > n-(n-index)/2){
+//         display = display + ' ';
+//         } else {
+//             display = display + '*';
+//         }
+//     }
+//     console.log(display);
+// }
+
+// exer 5 - contorno da árvore de natal
+let n = 7;
 let par = true;
-for (let i = 0; i < n; i += 1) {
+for (let i = 0; i < n - 1; i += 1) {
     if (par === true) {
-        preenche(i);
+        contorno(i);
     }
     par = !par;
 }
+preencheUltimaLinha(n);
 
-function preenche(index) {
+function contorno(index) {
     let display = '';
     for (let j = 0; j < n; j += 1) {
-        if (j < (n-index-1)/2 || j > n-(n-index)/2){
-        display = display + ' ';
-        } else {
+        let metade = (n - index - 1) / 2;
+        if (j == metade || j == n - 1 - metade) {
             display = display + '*';
+        } else {
+            display = display + ' ';
         }
     }
     console.log(display);
 }
 
-// exer 5 - contorno da árvore de natal
-
+function preencheUltimaLinha (n) {
+    let display = '';
+    for (let j = 0; j < n; j += 1) {
+        display = display + '*';
+    }
+    console.log(display);
+}
 
 // // exer 6 - verificar se é primo
 // let limit = 50;
