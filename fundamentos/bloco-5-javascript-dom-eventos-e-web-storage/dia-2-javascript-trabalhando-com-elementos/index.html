@@ -95,14 +95,14 @@
 
     //8
         let lista = document.createElement('ul');
-        let itensDaLista = ['um', 'dois', 'três', 'quatro'];
-        function listItem(number) {
-            for (let i = 0; i < itensDaLista.length; i++) {
-                lista.innerHtml = '<li>itensDaLista[i]</li>';
-            }
-            lista[i].innerHtml = '<li>number</li>';
-        }
         secao3.appendChild(lista);
+
+        let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (let i = 0; i < numeros.length; i += 1){
+          let listItem = document.createElement('li');
+          listItem.innerText = numeros[i];
+          lista.appendChild(listItem);
+        }
 
         
     </script>
