@@ -1,0 +1,57 @@
+#logo {
+    height: 50px;
+    width: 50px;
+  }
+
+body {
+  font-family: "Ubuntu";
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#text{
+    display: flex;
+    justify-content: center;
+}
+
+#images {
+    width: 50%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 80%;
+}
+
+.img-title {
+    background-color: rgb(240, 240, 240);
+    border-radius: 7px;
+    box-shadow: black;
+    width: 100px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-title p{
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+    padding: 0 5px;
+}
