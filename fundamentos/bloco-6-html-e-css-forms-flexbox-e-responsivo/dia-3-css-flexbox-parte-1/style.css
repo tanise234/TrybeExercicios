@@ -1,57 +1,91 @@
 #logo {
-    height: 50px;
-    width: 50px;
-  }
+  height: 50px;
+  width: 50px;
+}
 
 body {
   font-family: "Ubuntu";
+  padding: 0;
+  margin: 0;
 }
 
 header {
   background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
+  color: rgb(220, 220, 220);
+}
+
+a {
+  color: rgb(180, 180, 180);
 }
 
 #header {
   width: 80%;
+  margin-left: 10%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: bold;
 }
+#text {
+  margin-left: 10%;
+}
 
-#text{
-    display: flex;
-    justify-content: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text,
+#images,
+.img-title1,
+.img-title2,
+header {
+  display: flex;
+  justify-items: center;
 }
 
 #images {
-    width: 50%;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
+  width: 50%;
+  flex-wrap: wrap;
 }
 
 img {
-    width: 80%;
+  width: 80%;
 }
 
-.img-title {
-    background-color: rgb(240, 240, 240);
-    border-radius: 7px;
-    box-shadow: black;
-    width: 100px;
-    height: 130px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+.img-title1,
+.img-title2 {
+  background-color: rgb(240, 240, 240);
+  border-radius: 9px;
+  box-shadow: 1.5px 2px rgb(190, 190, 190);
+  width: 100px;
+  height: 130px;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 3px;
 }
 
-.img-title p{
-    font-size: 10px;
-    font-weight: bold;
-    color: rgb(100, 100, 100);
-    padding: 0 5px;
+.img-title1 p,
+.img-title2 p {
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+  padding: 0 5px;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 3px
+}
+
+footer {
+  border-top: 1px solid rgb(180, 180, 180);
+  ;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
