@@ -12,6 +12,8 @@ body {
 header {
   background-color: black;
   color: rgb(220, 220, 220);
+  display: flex;
+  justify-items: center;
 }
 
 a {
@@ -26,9 +28,6 @@ a {
   align-items: center;
   font-weight: bold;
 }
-#text {
-  margin-left: 10%;
-}
 
 main {
   display: flex;
@@ -36,48 +35,43 @@ main {
   align-items: center;
 }
 
-#text,
-#images,
-.img-title1,
-.img-title2,
-header {
+#text {
+  margin: 0 5%;
   display: flex;
   justify-items: center;
 }
 
 #images {
-  width: 50%;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 
-img {
+#images img {
   width: 80%;
 }
 
-.img-title1,
-.img-title2 {
+#img1, #img2 {
+    display: flex;
+}
+
+#img1 div, #img2 div {
   background-color: rgb(240, 240, 240);
   border-radius: 9px;
   box-shadow: 1.5px 2px rgb(190, 190, 190);
   width: 100px;
   height: 130px;
-  flex-wrap: wrap;
-  align-content: center;
   margin: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.img-title1 p,
-.img-title2 p {
+#images div div p {
   font-size: 10px;
   font-weight: bold;
   color: rgb(100, 100, 100);
-  padding: 0 5px;
-}
-
-footer img {
-  width: 20px;
-  height: 20px;
-  margin: 3px
 }
 
 footer {
@@ -88,4 +82,10 @@ footer {
   width: 100px;
   display: flex;
   justify-content: center;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 3px
 }
