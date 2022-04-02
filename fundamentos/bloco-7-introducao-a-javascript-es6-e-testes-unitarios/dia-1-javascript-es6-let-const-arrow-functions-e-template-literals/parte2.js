@@ -29,3 +29,16 @@ const longestWord = (phrase) => {
 console.log(
   longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")
 );
+
+// =====================================================
+const skills = [`HTML`, `JavaScript`, `CSS`, `Flexbox`,`Mobile First`];
+
+function funcao1(string) {
+  return `test testium ${string} testare`;
+}
+
+function funcao2(string) {
+  return (`${funcao1(`x`)} ${string} ${skills.sort()}`);
+}
+
+console.log(funcao2('Jurubira'));
