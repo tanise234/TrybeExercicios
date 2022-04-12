@@ -62,3 +62,6 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+  const authorUnique = !books.some((book1) => books.find((book2) => book1.author.birthYear === book2.author.birthYear));
+
+  console.log(authorUnique);
