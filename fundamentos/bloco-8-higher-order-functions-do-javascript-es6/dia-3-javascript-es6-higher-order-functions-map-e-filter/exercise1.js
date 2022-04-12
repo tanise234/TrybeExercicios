@@ -62,7 +62,7 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-  const expectedResult = books.map((book) => book = `${book.name} - ${book.genre} - ${book.author.name}`);
+  const formatedBookNames = books.map((book) => book = `${book.name} - ${book.genre} - ${book.author.name}`);
 
   console.log(books); // interessante: ele não alterou o array inicial mesmo ele seus elementos sendo objetos
-  console.log(expectedResult);
+  console.log(formatedBookNames);
