@@ -4,6 +4,8 @@ const arrays = [
     [4, 5, 6],
   ];
   
-  function flatten() {
-    // escreva seu código aqui
+  const flatten = (matrix) => {
+    matrix.reduce((acc,element,index) => acc.push(element[index]),[]);
+    return acc;
   }
+  console.log(flatten(arrays));
