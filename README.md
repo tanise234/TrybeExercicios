@@ -1,1 +1,0 @@
-#Exercicios separados por blocos
